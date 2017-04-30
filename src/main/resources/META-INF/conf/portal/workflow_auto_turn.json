@@ -1,0 +1,36 @@
+{
+	"节点定义ID": {
+		"工作流定义ID": "000000",
+		"目标节点（如果是办结此处配置为空）":[{
+			"目标节点ID":"111111",
+			"目标人员ID":"222222"
+		},{
+			"目标节点ID":"333333",
+			"目标人员ID":"444444"
+		}],
+		"签名（如果没有签名配置为空）":[{
+			"签名Key": "gbc_sign",
+			"签名意见": "同意。"
+		},{
+			"签名Key": "bgs_sign",
+			"签名意见": "同意。"
+		}]
+	},
+	"8EE525B6BF024BC4AB1D1FEA42F1C560": {
+		"WORKFLOW_DEFINITION_ID": "3D4AD84DEB4C441E864F812AB3E9515E",
+		"TARGET_ACTIVITY":[{
+			"ACTIVITY_DEFINITION_ID":"111111",
+			"USER_ID":"222222"
+		},{
+			"ACTIVITY_DEFINITION_ID":"333333",
+			"USER_ID":"444444"
+		}],
+		"SIGN":[{
+			"SIGN_KEY": "gbc_sign",
+			"SIGN_OPINION": "同意。"
+		},{
+			"SIGN_KEY": "bgs_sign",
+			"SIGN_OPINION": "同意。"
+		}]
+	}
+}

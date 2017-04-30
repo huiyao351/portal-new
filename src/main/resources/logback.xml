@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!--<charset>utf-8</charset>-->
+            <pattern>%d{HH:mm:ss.SSS} |-%-5level [%thread] %logger{50}:%L - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.gtis.portal" level="error"/>
+    <logger name="com.gtis.portal.support.freemarker.FreeMarkerContext" level="error"/>
+
+    <logger name="org.springframework" level="error"/>
+
+    <logger name="org.hibernate" level="error"/>
+    <logger name="org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory" level="error"/>
+
+    <root level="error">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

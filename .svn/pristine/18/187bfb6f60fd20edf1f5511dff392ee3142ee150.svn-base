@@ -1,0 +1,444 @@
+@charset "utf-8";
+body{
+	padding:0px;
+	margin:0px;
+	font-family: "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,"WenQuanYi Micro Hei",Verdana,sans-serif,"\5B8B\4F53";
+}
+/*页面主题*/
+.PopPanel{
+	padding:0px;
+	margin:0px;
+	border-bottom: 1px solid #ddd;
+	width: auto!important;
+	min-width: 980px;
+}
+.PopPanel .panel-header{
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0px;
+	padding: 0px;
+	border: solid 0px transparent;
+}
+.panel-header .panelSpan{
+	margin-top:2px;
+}
+.panel-header .iconPosition{
+	margin-top:3px;
+}
+/*顶部信息及工具栏*/
+.PopPanel .panelBg {
+	background-color: #24b089;
+	color: #fff;
+	font-family: '\5FAE\8F6F\96C5\9ED1';
+	padding: 0px;
+	margin: 0px;
+	height: 20px;
+	padding: 6px 8px 10px 8px;
+}
+.panel-header h3 {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+.panelBg .panelLabel {
+	font-size: 16px;
+	color: #fff;
+	line-height: 24px;
+	margin: 0px 0;
+}
+.panelBg .label-success, .panelBg .badge-success, .table .label-success {
+	color: #ffffff;
+	background-color: #5cb85c;
+	border: 1px solid #4cae4c;
+}
+/*标题：项目名称*/
+.panelLabel>.icon {
+	padding: 0px 0px 0px 5px;
+}
+.panelLabel>.label {
+	padding: 2px 10px 2px 10px;
+	margin: 0px 0px 0px 10px;
+}
+/*顶部右侧工具栏*/
+.panel-header .panelButton {
+	border: 1px solid #429842;
+	padding: 0px 10px 0px 10px;
+	min-width:60px;
+	margin-left:10px;
+	font-size: 12px;
+	height:24px;
+	font-weight: lighter;
+	color: #fff;
+	background-color: #5eb95e;
+}
+.panel-header .panelButton:hover {
+	background: #429842;
+}
+.panel-header .panelButton:focus {
+	background: #429842;
+}
+.panel-header .panelButton i {
+	padding-right:6px;
+}
+/**********************************************************/
+.bottom-btn {
+	background-image:none;
+	color: #fff;
+	background-color: #3bb4f2;
+	border-color: #3bb4f2;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+.bottom-btn:hover {
+	background: #0f9ae0;
+}
+.bottom-btn:focus {
+	background: #0f9ae0;
+}
+.bottom-btn-close{
+	background-image:none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+/*页面中间部分，也是信息展示部分*/
+.panel-body {
+	position: relative;
+	padding:0px;
+}
+
+/*菜单及菜单页面部分*/
+#leftMenuDiv{
+	background:#f5f5f5;	
+}
+.tabbable .nav-tabs {
+	padding: 0px;
+	margin: 0px;
+	margin-right: 0px!important;
+	border-right: none!important;
+	position: relative;
+	z-index: 12;
+}
+.tabbable .oneMenuUL {
+	padding: 0px;
+	margin: 0px;
+	width: 250px;
+	margin-right: 0px!important;
+	border-right: none!important;
+	position: relative;
+	z-index: 900;
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+}
+.tabbable .oneMenuUL li{
+	padding:0px;
+	margin:0px;
+	margin-right:-1px;
+	border-bottom:1px solid #ddd;
+	background:#fff;
+	
+}
+.tabbable .oneMenuUL li a {
+	padding:8px;
+	margin:0px;
+	color: #333;
+}
+
+.tabbable .twoMenuUL {
+	padding: 0px;
+	margin: 0px;
+	margin-right: 0px!important;
+	border-right: none!important;
+	position: relative;
+	z-index: 12;
+	border-bottom: 0px solid #fff;
+	width: 250px;
+}
+.tabbable .twoMenuUL li{
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+.tabbable .twoMenuUL li:first-child{
+	border-top:1px solid #ddd;	
+}
+.tabbable .twoMenuUL li:last-child{
+	border-bottom:none;	
+}
+.tabbable .twoMenuUL li a {
+	padding:8px;
+	margin:0px;
+	margin-right:-1px;
+}
+
+.tabbable .twoMenuUL li .twoMenuA{
+	padding-left:20px;
+}
+
+.tabbable .threeMenuUL {
+	padding: 0px;
+	margin: 0px;
+	margin-right: 0px!important;
+	border-right: none!important;
+	position: relative;
+	z-index: 12;
+	border-bottom: 0px solid #fff;
+	width: 250px;
+}
+.tabbable .threeMenuUL li{
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+.tabbable .threeMenuUL li a {
+	padding:4px 2px 4px 4px;
+	margin:0px;
+	margin-right:-1px;
+}
+
+.tabbable .threeMenuUL li .threeMenuA{
+	padding-left:40px;
+}
+
+.tabbable .nav-tabs .active > a,.tabbable .nav-tabs .active > a:hover,.tabbable  .nav-tabs .active > a:focus {
+	/*color: #555555;*/
+	/*background-color: #ffffff;*/
+	cursor: default;
+	color:#fff;
+	background-color: #429842;
+	border: 1px solid #ddd;
+	border-bottom-color: transparent;
+	border-radius: 0 0 0 0;
+	
+}
+
+.tab-content {
+	border: 1px solid #ddd;
+	overflow: hidden;
+	position: relative;
+	border-right:0px solid #fff;
+	border-bottom:0px solid #fff;
+	z-index: 800;
+}
+.tab-pane {
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.modal {
+	border-radius: 0px;
+	padding-bottom: 10px;
+}
+.border-all {
+	border: 1px solid #d5d5d5;
+}
+
+.modal.fade.in {
+	top: 40%;
+}
+
+/*弹出modal*/
+.handleModal{
+	width:820px;
+	margin-left: -410px;
+	height:350px;
+}
+.handleModal.fade.in {
+	top:25%;
+}
+.handleSmallModel{
+	width:640px;
+	margin-left: -320px;
+	height:250px;
+}
+
+
+.modal-top-bar{
+	margin:0px;
+	background:#009E94;
+	color:#fff;
+	display:block;
+	padding: 0px 8px;
+	position:relative;
+	cursor:move;
+}
+.modal-top-bar .rightclose{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	opacity: 1;
+	font-size: 14px;
+	color: #fff;
+	/*text-shadow: 0 1px 0 #fff;*/
+	display: inline;
+	width: auto;
+	height: 37px;
+	line-height: 37px;
+	padding-top: 8px;
+}
+.modal-top-bar a{
+	color:#fff;padding-left: 0px;
+}
+.modal-title{
+	font-size: 14px;
+	height: 37px;
+	line-height: 37px;
+}
+.topBtnDiv{
+	height: 37px;
+	line-height: 37px;
+	position: absolute;
+	top: 4px;
+	right: 10px;
+}
+/********************************************/
+
+#divTab{
+	padding:4px;
+}
+#divTab textarea {
+	width: 98%;
+	height: auto;
+	border:0px solid gray;
+	font-size:14px;
+	line-height: 25px;
+}
+#divTab select {
+	margin:0px;
+	width:80px;
+	width:100%;
+}
+#divTab input[type="radio"], #divTab input[type="checkbox"] {
+	margin: 0px;
+	padding:0px;
+}
+.table_border td{
+	border: 1px solid #F0F0F0;
+}
+/*选项卡*/
+.tab-pane .defaultTheme .bui-uploader-button-wrap {
+	background: #006dcc;
+	border-radius: 0px;
+}
+.tab-pane .defaultTheme .bui-uploader-button-wrap:hover {
+	background: #0a6999;
+}
+.tab-pane .defaultTheme .bui-uploader-button-wrap:link {
+	color: #fff;
+}
+
+/*勘测定界div样式*/
+.kcdjInfoDiv{
+	background-image: url('../images/bg-02.png');
+	background-repeat: repeat;
+	position: absolute;left:0px;bottom:0px;width:246px;
+	height:70px;
+	padding:6px 0px 6px 6px;
+	border-top: 1px solid #ddd;
+	z-index: 998;
+}
+
+/*项目信息div样式*/
+.projectInfoDiv{
+	background-image: url('../images/bg-02.png');
+	background-repeat: repeat;
+	position: absolute;left:0px;bottom:0px;
+	width:244px;
+	min-height:120px;
+	padding:6px 0px 6px 6px;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	z-index: 999;
+}
+.projectDetailInfoUl li{
+	padding:2px 2px 2px 2px;
+}
+
+.hui-btn{
+	padding: 4px 12px;
+	border: solid 1px #ddd;
+	height: 31px;
+}
+.myModal .row{
+	margin:0px;
+	padding:10px 10px 0px 10px;
+}
+
+div.vs-context-menu {
+	position:absolute;
+	/*visibility:hidden;
+	top:0;*/
+	background-color: #9c9c9c;
+	text-align: left;
+	border:1px solid #9c9c9c;
+}
+div.vs-context-menu ul{
+	padding:2px;
+	margin:0px;
+	background-color:#fff;
+	border:none;
+}
+div.vs-context-menu ul li{
+	cursor: pointer;
+	list-style: none outside none;
+	padding:2px;
+	font-size: 12px;
+}
+
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active {
+	color: #fff;
+	background-color: #0f9ae0;
+	border-color: #0f9ae0;
+}
+.btn:first-child {
+}
+.size-M {
+	padding: 4px 12px;
+}
+
+.input-text, .input-text.size-M, .btn.size-M {
+	font-size: 14px;
+	height: 31px;
+	line-height: 1.42857;
+	padding: 4px;
+}
+.btn-secondary {
+	display: inline-block;
+	box-sizing: border-box;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 400;
+	white-space: nowrap;
+	vertical-align: middle;
+	-moz-padding-start: npx;
+	-moz-padding-end: npx;
+	border: solid 1px #ddd;
+	width: auto;
+	-webkit-transition: background-color .1s linear;
+	-moz-transition: background-color .1s linear;
+	-o-transition: background-color .1s linear;
+	transition: background-color .1s linear;
+	color: #fff;
+	background-color: #3bb4f2;
+	border-color: #3bb4f2;
+}
+
+.input-text, .textarea {
+	box-sizing: border-box;
+	border: solid 1px #aaa;
+	border-radius: 0px;
+	width: 100%;
+	-webkit-transition: all .2s linear 0s;
+	-moz-transition: all .2s linear 0s;
+	-o-transition: all .2s linear 0s;
+	transition: all .2s linear 0s;
+}
+textarea{
+	resize:none;
+}

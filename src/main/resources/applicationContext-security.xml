@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <security:http entry-point-ref="casProcessingFilterEntryPoint">
+
+        <security:intercept-url pattern="/**" access="ROLE_USER"/>
+        <security:intercept-url pattern="/static/**" filters="none"/>
+        <security:intercept-url pattern="/home/**" filters="none"/>
+        <security:logout invalidate-session="true" logout-url="/logout.action" logout-success-url="${cas.url}/logout?service=${portal.url}"/>
+    </security:http>
+
+    <bean id="casProcessingFilterEntryPoint" class="org.springframework.security.ui.cas.CasProcessingFilterEntryPoint">
+        <property name="loginUrl" value="${cas.url}/login"/>
+        <property name="serviceProperties" ref="serviceProperties"/>
+    </bean>
+
+    <bean id="casProcessingFilter" class="org.springframework.security.ui.cas.CasProcessingFilter">
+        <security:custom-filter after="CAS_PROCESSING_FILTER"/>
+        <property name="authenticationManager" ref="authenticationManager"/>
+        <property name="authenticationFailureUrl" value="/"/>
+        <property name="defaultTargetUrl" value="/"/>
+        <property name="filterProcessesUrl" value="/casCheck.do"/>
+    </bean>
+
+    <bean id="casAuthenticationProvider" class="org.springframework.security.providers.cas.CasAuthenticationProvider">
+        <security:custom-authentication-provider/>
+        <property name="userDetailsService" ref="userDetailsService"/>
+        <property name="serviceProperties" ref="serviceProperties"/>
+        <property name="ticketValidator">
+            <bean class="org.jasig.cas.client.validation.Cas20ServiceTicketValidator">
+                <constructor-arg index="0" value="${cas.url}"/>
+            </bean>
+        </property>
+        <property name="key" value="an_id_for_this_auth_provider_only"/>
+    </bean>
+
+    <security:authentication-manager alias="authenticationManager"/>
+
+    <bean id="serviceProperties" class="org.springframework.security.ui.cas.ServiceProperties">
+        <property name="service" value="${portal.url}/casCheck.do"/>
+        <property name="sendRenew" value="false"/>
+    </bean>
+
+    <bean id="userDetailsService" class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
+        <property name="httpInvokerRequestExecutor" ref="httpInvokerRequestExecutor"/>
+        <property name="serviceUrl" value="${platform.url}/userDetailsService.service"/>
+        <property name="serviceInterface" value="org.springframework.security.userdetails.UserDetailsService"/>
+    </bean>
+
+</beans>

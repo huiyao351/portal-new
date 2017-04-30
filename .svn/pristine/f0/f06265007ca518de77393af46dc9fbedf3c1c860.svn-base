@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>可关闭带左右滚动功能的jquery选项卡插件</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="css/tab-control.css" />
+</head>
+
+<body>
+<br />
+
+<!-- 选项卡 -->
+<div class="tab-control">
+
+	<!-- 标签 -->
+	<div class="tab simple">
+
+		<form>
+			<input class="prev" type="button" />
+			<input class="next" type="button" />
+			<input class="find" type="button" />
+		</form>
+
+		<ul>
+
+			<!-- <li>标签<a href="javascript:;">关闭</a></li> -->
+
+		</ul>
+
+	</div>
+
+	<!-- 标签查找 -->
+	<div class="tab-find hidden">
+
+		<form>
+			<input class="text" type="text" />
+		</form>
+
+		<ul>
+
+			<!-- <li>标签<a href="javascript:;">关闭</a></li> -->
+
+		</ul>
+
+	</div>
+
+	<!-- 主体 -->
+
+	<div class="main">
+
+		<!-- <iframe scrolling="auto" frameborder="0"></iframe> -->
+
+	</div>
+
+</div>
+
+<script type="text/javascript" src="../jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/tab-control.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+  TabControlAppend('1', '9.9元全国包邮', 'http://news.baidu.com/');
+  TabControlAppend('2', '技术锦囊', 'http://www.qq.com');
+  TabControlAppend('3', '在线API', 'http://www.mi.com/');
+  TabControlAppend('4', 'Jquery学堂', 'http://www.sina.com/');
+//]]>
+</script>
+
+</body>
+</html>

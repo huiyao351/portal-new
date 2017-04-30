@@ -1,0 +1,94 @@
+{
+  "dataUrl": {
+	"布局位置": {
+	  "数据请求": "${office.url}/news?id=test",
+	  "更多按钮的超链接": "${office.url}/news?id=test"
+	},
+	"leftTop": {
+	  "id":"zhsw_left_top",
+	  "name":"图片新闻",
+	  "defaultSize":5,
+	  "leftTopAjaxUrl": "${oa.url}/pageInfoData/getUserListDataByLinkId?statement=getNewsImageDataList",
+	  "leftTopUrl": ""
+	},
+	"centerTopTab1": {
+	  "id":"zhsw_center_top_tab1",
+	  "name":"通知公告",
+	  "defaultSize":5,
+	  "centerTopTab1AjaxUrl": "${oa.url}/pageInfoData/getUserListDataByLinkId?statement=getNewsInfoDataList",
+	  "centerTopTab1Url": "${oa.url}/news/acceptList"
+	},
+	"centerTopTab2": {
+	  "id":"zhsw_center_top_tab2",
+	  "name":"消息传递",
+	  "defaultSize":5,
+	  "centerTopTab2AjaxUrl": "${oa.url}/pageInfoData/getUserListDataByLinkId?statement=getMessageSendInfoDataList",
+	  "centerTopTab2Url": "${oa.url}/messagesend/acceptList"
+	},
+	"centerTopTab3": {
+	  "id":"zhsw_center_top_tab3",
+	  "name":"国土快讯",
+	  "defaultSize":5,
+	  "centerTopTab3AjaxUrl": "${office.url}/news?id=test",
+	  "centerTopTab3Url": "${office.url}/news?id=test"
+	},
+	"centerTopTab4": {
+	  "id":"zhsw_center_top_tab4",
+	  "name":"政策法规",
+	  "defaultSize":5,
+	  "centerTopTab4AjaxUrl": "${office.url}/news?id=test",
+	  "centerTopTab4Url": "${office.url}/news?id=test"
+	},
+	"leftMiddle": {
+	  "id":"zhsw_left_middle",
+	  "name":"收文",
+	  "defaultSize":8,
+	  "leftMiddleAjaxUrl": "${oa.url}/pageInfoData/getUserListDataByLinkId?statement=getReceiveDataList",
+	  "leftMiddleUrl": "${oa.url}/receive/list"
+	},
+	"centerMiddle": {
+	  "id":"zhsw_center_middle",
+	  "name":"发文",
+	  "defaultSize":8,
+	  "centerMiddleAjaxUrl": "${oa.url}/pageInfoData/getUserListDataByLinkId?statement=getDispatchDataList",
+	  "centerMiddleUrl": "${oa.url}/dispatch/list"
+	},
+	"rightTop": {
+	  "id":"zhsw_right_top",
+	  "name":"日程安排",
+	  "defaultSize":8,
+	  "rightTopAjaxUrl": "${oa.url}/pageInfoData/getUserListDataByLinkId?statement=getScheduleInfoDataList",
+	  "rightTopUrl": "${oa.url}/calendar"
+	},
+	"rightMiddle": {
+	  "id":"zhsw_right_middle",
+	  "name":"待办任务",
+	  "nameTop":"超期待办任务",
+	  "nameDown":"待办任务",
+	  "rightMiddleAjaxUrl": "${portal.url}/taskCenter/indextask",
+	  "rightMiddleUrl": "${office.url}/news?id=test"
+	}
+  },
+  "ajaxReturn": {
+	"success": true,
+	"data": [
+	  {
+		"id":"",
+		"img":"",
+		"url": "",
+		"title": "",
+		"date": "",
+		"content":""
+	  },
+	  {
+		"id":"",
+		"img":"",
+		"url": "",
+		"title": "",
+		"date": "",
+		"content":""
+	  }
+	],
+	"msg": "操作成功"
+  }
+}

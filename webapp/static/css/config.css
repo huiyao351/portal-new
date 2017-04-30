@@ -1,0 +1,137 @@
+body{
+    *overflow-y:hidden;
+    min-width: 750px;min-height:350px;
+}
+
+.Hui-wraper{
+    padding:0px;
+    margin:0px;
+}
+
+.Hui-wraper, .wp, .container {
+    width: auto!important;
+    padding: 0 0px!important;
+}
+
+.configHeaderDiv{
+    width:100%;border:1px solid #CCC;
+}
+
+.titleLab{
+    margin-top:0px;
+    background:#0f9ae0;
+    color:#fff;
+    display:block;
+    padding:6px 8px;
+    position:relative;
+    cursor:move;
+}
+.titleLab .close{
+    position:absolute;
+    top:10px;
+    right:10px;
+    color:#fff;
+}
+.titleLab a{
+    color:#fff;padding-left: 0px;
+}
+.topBtnDiv{
+    float:right;font-size: 14px;
+}
+.topBtnDiv a{
+    color:#fff;padding-left: 15px;
+}
+.form-element{
+    padding:5px 10px 5px 0px;
+}
+.form-element .form-label{
+    min-width:70px;
+    padding:0px;
+    padding-right: 4px;
+}
+.form-element .form-input{
+    padding:0px;
+    padding-left: 4px;
+}
+.form-horizontal select{
+    height:31px;
+}
+.form-horizontal textarea {
+    width: 100%;
+    height: auto;
+    border:1px solid #ddd;
+    font-size:14px;
+    line-height: 25px;
+    padding:4px;
+}
+.form-horizontal .form-textarea{
+    padding-left: 4px;
+    padding-right:10px;
+}
+
+.modal-top-bar{
+    margin:0px;
+    background:#0f9ae0;
+    color:#fff;
+    display:block;
+    padding:10px 8px;
+    position:relative;
+    cursor:move;
+}
+.modal-top-bar .rightclose{
+    position:absolute;
+    top:10px;
+    right:10px;
+    color:#fff;
+}
+.modal-top-bar a{
+    color:#fff;padding-left: 0px;
+}
+
+.stuffConfigModal{
+    width:900px;
+    margin-left: -450px;
+    height:570px;
+}
+.imageConfigModal{
+    width:900px;
+    margin-left: -450px;
+    height:600px;
+}
+.rpConfigModal{
+    width:900px;
+    margin-left: -450px;
+    height:550px;
+}
+.infoConfigModal{
+    width:700px;
+    margin-left: -350px;
+    height:550px;
+}
+.selectConfigModal{
+    width:500px;
+    margin-left: -250px;
+    height:542px;
+}
+.selectTableTr{
+    color:#000000;
+    font-size:14px;
+    font-weight: bold;
+}
+
+.configMainDiv{
+    overflow-x:hidden;overflow-y:auto;
+}
+.configBottomDiv{
+    border:1px solid #ccc;margin:6px;height:102px;position:absolute;bottom:0px;
+}
+
+.configPanelDiv{
+    border:1px solid #ccc;margin:6px;min-height:100px;
+}
+.configPanelDiv p{
+    margin:0px;
+    padding:4px 4px 0px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}

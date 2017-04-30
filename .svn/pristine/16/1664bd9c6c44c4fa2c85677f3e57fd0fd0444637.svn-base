@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "spring-beans-2.0.dtd">
+<beans>
+	<!-- 布尔类型（是否） -->
+	<bean id="boolList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="否"/>
+					<property name="name" value="否"/> 
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="是"/>
+					<property name="name" value="是"/> 
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+	<!-- 布尔类型（是否考勤） -->
+	<bean id="boolListNumber" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="1"/>
+					<property name="name" value="是"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="0"/>
+					<property name="name" value="否"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+	<!-- 紧急程度-->
+	<bean id="priorityList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="1"/>
+					<property name="name" value="普通"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2"/>
+					<property name="name" value="紧急"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="3"/>
+					<property name="name" value="特急"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+	<!-- 性别 -->
+	<bean id="sexList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="男"/>
+					<property name="name" value="男"/> 
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="女"/>
+					<property name="name" value="女"/> 
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<!--学历-->
+	<bean id="degreeList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="初中"/>
+					<property name="name" value="初中"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="高中"/>
+					<property name="name" value="高中"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="中专"/>
+					<property name="name" value="中专"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="大专"/>
+					<property name="name" value="大专"/>
+				</bean>
+
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="本科"/>
+					<property name="name" value="本科"/>
+				</bean>
+
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="硕士"/>
+					<property name="name" value="硕士"/>
+				</bean>
+
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="博士"/>
+					<property name="name" value="博士"/>
+				</bean>
+
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="博士后"/>
+					<property name="name" value="博士后"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+
+
+	<!-- 资源类型 -->
+	<bean id="zylxList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<!--<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="1"/>
+					<property name="name" value="动态表单"/>
+				</bean>-->
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="5"/>
+					<property name="name" value="ACTION模块"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2"/>
+					<property name="name" value="JSP页面"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="3"/>
+					<property name="name" value="STRUTS模块"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="4"/>
+					<property name="name" value="SERVLET模块"/>
+				</bean>
+				<!--<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="6"/>
+					<property name="name" value="查询设计"/>
+				</bean>-->
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<!-- 资源加载模式 -->
+	<bean id="zyjzmsList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="3"/>
+					<property name="name" value="相对路径"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="1"/>
+					<property name="name" value="重定位"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2"/>
+					<property name="name" value="绝对路径"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<!-- 数据库类型-->
+	<bean id="databaseList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="ORACLE"/>
+					<property name="name" value="ORACLE"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="SQLServer"/>
+					<property name="name" value="SQLServer"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<!-- 附件介质类型-->
+	<bean id="meterialList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="电子文件"/>
+					<property name="name" value="电子文件"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="纸张"/>
+					<property name="name" value="纸张"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="partitionTypeList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="0"/>
+					<property name="name" value="元素分区"/>
+				</bean>
+				<!--<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="1"/>
+					<property name="name" value="功能分区"/>
+				</bean>-->
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="partitionOperatType" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="0"/>
+					<property name="name" value="完全控制"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="1"/>
+					<property name="name" value="只读"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2"/>
+					<property name="name" value="不可见"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="subTypeList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="1"/>
+					<property name="name" value="菜单"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2"/>
+					<property name="name" value="超链接"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="3"/>
+					<property name="name" value="IFrame"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="subMenuTypeList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="two"/>
+					<property name="name" value="左两级"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="three"/>
+					<property name="name" value="左三级"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="calTypeList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="工作日"/>
+					<property name="name" value="工作日"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="节假日"/>
+					<property name="name" value="节假日"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="calWeekList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="星期一"/>
+					<property name="name" value="星期一"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="星期二"/>
+					<property name="name" value="星期二"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="星期三"/>
+					<property name="name" value="星期三"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="星期四"/>
+					<property name="name" value="星期四"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="星期五"/>
+					<property name="name" value="星期五"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="星期六"/>
+					<property name="name" value="星期六"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="星期日"/>
+					<property name="name" value="星期日"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<!-- 行政区代码对照表，如果存在地方行政区代码和省厅不一致的，则需要在此配置上，key对应省厅行政区代码，value对应地方行政区 -->
+	<!--<bean id="xzqRelMap" class="java.util.HashMap">
+		<constructor-arg>
+			<map>
+				<entry key="000000" value="000000" />
+			</map>
+		</constructor-arg>
+	</bean>-->
+
+	<!-- 周 -->
+	<bean id="weekList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value=""/>
+					<property name="name" value="---周---"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="1"/>
+					<property name="name" value="第一周"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2"/>
+					<property name="name" value="第二周"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="3"/>
+					<property name="name" value="第三周"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="4"/>
+					<property name="name" value="第四周"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="5"/>
+					<property name="name" value="第五周"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+	<!-- 月份 -->
+	<bean id="monthList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value=""/>
+					<property name="name" value="---月份---"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="1"/>
+					<property name="name" value="一月份"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2"/>
+					<property name="name" value="二月份"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="3"/>
+					<property name="name" value="三月份"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="4"/>
+					<property name="name" value="四月份"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="5"/>
+					<property name="name" value="五月份"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="6"/>
+					<property name="name" value="六月份"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="7"/>
+					<property name="name" value="七月份"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="8"/>
+					<property name="name" value="八月份"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="9"/>
+					<property name="name" value="九月份"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="10"/>
+					<property name="name" value="十月份"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="11"/>
+					<property name="name" value="十一月份"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="12"/>
+					<property name="name" value="十二月份"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+	<!-- 季度 -->
+	<bean id="quarterList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value=""/>
+					<property name="name" value="---季度---"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="1"/>
+					<property name="name" value="第一季度"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2"/>
+					<property name="name" value="第二季度"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="3"/>
+					<property name="name" value="第三季度"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="4"/>
+					<property name="name" value="第四季度"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+	<!-- 年 -->
+	<bean id="yearList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value=""/>
+					<property name="name" value="---请选择---"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2005"/>
+					<property name="name" value="2005年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2006"/>
+					<property name="name" value="2006年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2007"/>
+					<property name="name" value="2007年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2008"/>
+					<property name="name" value="2008年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2009"/>
+					<property name="name" value="2009年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2010"/>
+					<property name="name" value="2010年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2011"/>
+					<property name="name" value="2011年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2012"/>
+					<property name="name" value="2012年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2013"/>
+					<property name="name" value="2013年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2014"/>
+					<property name="name" value="2014年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2015"/>
+					<property name="name" value="2015年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2016"/>
+					<property name="name" value="2016年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2017"/>
+					<property name="name" value="2017年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2018"/>
+					<property name="name" value="2018年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2019"/>
+					<property name="name" value="2019年"/>
+				</bean>
+				<bean class="com.gtis.portal.entity.PublicVo">
+					<property name="value" value="2020"/>
+					<property name="name" value="2020年"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+</beans>

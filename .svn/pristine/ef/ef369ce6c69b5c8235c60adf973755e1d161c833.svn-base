@@ -1,0 +1,50 @@
+.treeManage{
+    padding-left:10px;padding-right:10px;
+    padding-top:10px;
+}
+.ztree {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.ztree * {
+    font-size: 14px;
+}
+.ztree li {
+    padding: 2px 4px;
+}
+.ztree li .line {
+    border-top: solid 0px #fff;
+}
+.ztreeLeftDiv{
+    min-width:300px;border:1px solid #CCC;min-height:323px;height: 100%;
+}
+.ztreeRightDiv{
+    border:1px solid #CCC;min-height:323px;height: 100%;
+}
+.ztreeRightHiddenDiv{
+    display:none;
+}
+div.rightMenu {
+    position:absolute;
+    visibility:hidden;
+    top:0;
+    background-color: #9c9c9c;
+    text-align: left;
+    border:1px solid #9c9c9c;
+}
+div.rightMenu ul{
+    padding:4px;
+    margin:0px;
+    background-color:#fff;
+    border:none;
+}
+div.rightMenu ul li{
+    cursor: pointer;
+    list-style: none outside none;
+    padding:4px;
+    font-size: 14px;
+}
+.close {
+    opacity: 1;
+    color: #fff;
+}
